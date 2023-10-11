@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    color: red;
+}
+
+h2,h3{
+    font-family: "Gill Sans", sans-serif;
+    color: #0073E6;
+    font-size: 50px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    border: 5px solid #ff9900; /* 5px solid border of your choice of color (in this case, orange) */
+    padding: 10px; /* 10px of padding */
+    margin: 20px; /* 20px of margin */
+    border-top-right-radius: 30px; /* Add a border-top-right-radius of 30px */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: left;
+    font-style: 'Times New Roman';
+    font-size: 30px;
+}
+
+nav a{
+    color: black
+}
+
+.active{
+    color: #ff9900;
+}
+
+#main_content div{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+#main_content div *{
+    grid-column: 1 / -1;
+}
+
+#main_content div img:nth-last-child(2n+1){
+    grid-column: 1 / 1;
+}
+
+#main_content div img:nth-last-child(2n){
+    grid-column: 2 / 2;
+}
+
