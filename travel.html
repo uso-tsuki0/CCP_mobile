@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <a href = "#main_content">Skip to Main Content</a>
+    <div>
+        <a class="skip" href = "#main_content">Skip to Main Content</a>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Pets</a></li>
-            <li><a href="travel.html" class="active">Travel</a></li>
+            <li class="active"><a href="travel.html">Travel</a></li>
             <li><a href="recipes.html">Recipes</a> </li>
         </ul>
     </nav>
@@ -22,14 +24,14 @@
             <h2>Vanoise national park</h2>
             <img src="https://peakvisor.com/img/news/vanoise-national-park.jpg" width = "600" alt = "national park"> 
             <p>
-                Located in the heart of the French Alps, the Vanoise National Park stands as the first national park established in France.[2] This majestic mountainous region boasts soaring peaks, glacial valleys, and unique flock or herd of alpine biomes. The park offers an extensive network of hiking trails, providing visitors with the opportunity to explore its grand landscapes, to spot rare wildlife such as ibex and chamois, and to take a breath of the crisp mountain air. Besides, there are more than 100 bird species in the protected area, including bearded vulture, golden eagle and Eurasian eagle-owl, making this area a crucial place for species and ecological protection.
+                Located in the heart of the French Alps, the Vanoise National Park stands as the first national park established in France. This majestic mountainous region boasts soaring peaks, glacial valleys, and unique flock or herd of alpine biomes. The park offers an extensive network of hiking trails, providing visitors with the opportunity to explore its grand landscapes, to spot rare wildlife such as ibex and chamois, and to take a breath of the crisp mountain air. Besides, there are more than 100 bird species in the protected area, including bearded vulture, golden eagle and Eurasian eagle-owl, making this area a crucial place for species and ecological protection.
             </p>
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://media.wired.com/photos/59273ffd7034dc5f91bee0cf/master/w_1920,c_limit/Vulture1.jpg" width = "300" alt = "bird">
                 <figcaption>golden eagle</figcaption> 
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/258097941/1200" width = "300" alt = "bird">
                 <figcaption>Eurasian eagle-owl</figcaption> 
             </figure>
@@ -41,11 +43,11 @@
                 In southwestern France, the Pyrenees National Park stretches along the border with Spain, offering a diverse range of landforms. Towering snow-capped peaks, deep valleys, and cascading waterfalls characterize this rugged and amazing natural paradise. Hikers can traverse the famous GR10 trail, which winds through the park, offering breathtaking views and encounters with wildlife such as brown bears and marmots. The Pyrenees National Park is also a designated International Dark Sky Reserve, making it an ideal destination for stargazing.
             </p>
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://www.valleesdegavarnie.com/wp-content/uploads/2023/01/vallleesdegavarnie-gavarnie-taillon-nuit-pierremeyer-1-1920x1062.jpg" width = "400" alt = "sky">
                 <figcaption>Starry sky reserve</figcaption> 
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://www.valleesdegavarnie.com/wp-content/uploads/2023/01/valleesdegavarnie-bareges-pic-du-midi-pierremeyer29-1-430x270.jpg" width = "300" alt = "Observatory">
                 <figcaption>Observatory</figcaption> 
             </figure>
@@ -57,11 +59,11 @@
                 Nestled in the southeastern region of France, the Camargue Regional Nature Park is a captivating and diverse natural wonder. Stretching over 80,000 hectares, this enchanting park is known for its stunning landscapes and unique wildlife. With its expansive wetlands, salt marshes, and lagoons, the Camargue provides a haven for a wide array of species. Visitors can witness the amazing sight of wild white horses, pink flamingos gracefully wading through shallow waters, and flocks of migratory birds soaring through the skies. With its untouched beauty and rich natural heritage, the Camargue Natural Reserve offers a truly immersive experience for nature enthusiasts and wildlife lovers.
             </p>
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://i0.wp.com/live-less-ordinary.com/wp-content/uploads/2016/07/Flamingos-in-Camargue-Road-Trip-in-Southern-France-and-Borders-June-2.jpg?ssl=1" width = "300" alt = "Flamingo">
                 <figcaption>Flamingo</figcaption> 
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://travelfranceblog.com/wp-content/uploads/2023/03/Camargue-2.jpg" width = "200" alt = "The Camargue's white horses">
                 <figcaption>The Camargue's white horses</figcaption> 
             </figure>
@@ -78,11 +80,11 @@
             </p>
             
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://explorethecanyon.com/wp-content/uploads/2018/01/Secrets-Image-1lr.jpg" width="300" alt="Grand Canyon Photo 1">
                 <figcaption>Scenic View</figcaption>
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Horseshoe_Bend_13_February_2023.jpg" width="300" alt="Grand Canyon Photo 2">
                 <figcaption>Colorado River</figcaption>
             </figure>
@@ -94,11 +96,11 @@
                 Lake Baikal, situated in Siberia, Russia, is the world's deepest and oldest freshwater lake. It is renowned for its stunning natural beauty and unique ecological significance. This vast and crystal-clear lake is surrounded by picturesque landscapes, including rugged mountains, dense forests, and charming villages. Lake Baikal is also known for its incredible biodiversity, with numerous species found nowhere else on Earth.
             </p>
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://lh3.googleusercontent.com/-TNdzGKkxp78/VoQHKNsQC2I/AAAAAAABKDg/Agk6AMDmwrE/lake-baikal-ice-310.jpg?imgmax=800" width="300" alt="Baikal Wildlife 1">
                 <figcaption>Ice of Lake Baikal</figcaption> 
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/05/lake-baikal-siberia-winter-8.jpg" width="300" alt="Baikal Wildlife 2">
                 <figcaption>Frozen cave</figcaption> 
             </figure>
@@ -116,11 +118,11 @@
             </p>
             
             <h3>Photo Gallery</h3>
-            <figure>
+            <figure class="gallery">
                 <img src="https://www.hikingupward.com/WMNF/Presidentials/images/072416/DSC00224.JPG" width="300" alt="Hiking in the Presidential Range">
                 <figcaption>Hiking in the Presidential Range</figcaption>
             </figure>
-            <figure>
+            <figure class="gallery">
                 <img src="https://www.nhgrand.com/wp-content/uploads/2020/03/NH_Grand_Auto_Rd_Sunrise_Drives.jpg" width="300" alt="Mount Washington Sunrise">
                 <figcaption>Sunrise at Mount Washington</figcaption>
             </figure>
