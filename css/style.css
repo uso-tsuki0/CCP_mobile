@@ -109,7 +109,7 @@ nav li:hover{
     grid-gap: 20px;
     align-items: center;
     justify-items: center;
-    overflow: visible;
+    overflow: hidden;
 }
 
 #main_content div *{
@@ -129,7 +129,6 @@ nav li:hover{
     display: inline-block;
     width: 70%;
     grid-column: span 1;
-    overflow: hidden;
 }
 
 @keyframes gallery_ani{
