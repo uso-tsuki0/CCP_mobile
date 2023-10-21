@@ -129,6 +129,7 @@ nav li:hover{
     display: inline-block;
     width: 70%;
     grid-column: span 1;
+    max-height: 300px;
 }
 
 @keyframes gallery_ani{
