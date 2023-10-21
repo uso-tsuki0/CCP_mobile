@@ -157,6 +157,7 @@ nav li:hover{
 #main_content div p{
     width: 90%;
     margin: 0 auto;
+    padding: 20px 0px 0px 0px;
 }
 
 #main_content p:hover::first-letter{
