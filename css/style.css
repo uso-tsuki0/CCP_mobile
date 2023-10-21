@@ -41,18 +41,18 @@ p {
 
 img, video{
     display: block;
-    border: 5px dashed #0073E6;
+    border: 5px solid #ff9900;
     padding: 10px;
     border-top-right-radius: 30px;
 }
 
 .gallery, .gallery>img{
-    border: 5px solid #ff9900;
     display: block;
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
+
 
 @keyframes div_ani{
     0% {background-color: white;}
@@ -121,8 +121,9 @@ nav li:hover{
     grid-column: span 2;
 }
 
-#main_content div>img{
+#main_content div>img:first-of-type{
     width: 60%;
+    border: 5px dashed #0073E6;
 }
 
 #main_content div:hover{
