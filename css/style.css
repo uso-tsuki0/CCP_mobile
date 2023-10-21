@@ -50,10 +50,21 @@ img, video{
     margin: auto 0;
 }
 
+@keyframes div_ani{
+    0% {background-color: white;}
+    50% {background-color: #ffce84;}
+    100% {background-color: white;}
+}
+
 nav{
     display: block;
     text-align: center;
-    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+nav:hover{
+    animation-name: div_ani;
+    animation-duration: 2s;
 }
 
 nav li {
@@ -98,20 +109,15 @@ nav li:hover{
     grid-gap: 20px;
     align-items: center;
     justify-items: center;
+    overflow: visible;
 }
 
 #main_content div *{
     grid-column: span 2;
 }
 
-#main_content div img:first-child{
-    width: 100%;
-}
-
-@keyframes div_ani{
-    0% {background-color: white;}
-    50% {background-color: #ffce84;}
-    100% {background-color: white;}
+#main_content div>img{
+    width: 50%;
 }
 
 #main_content div:hover{
@@ -120,19 +126,21 @@ nav li:hover{
 }
 
 #main_content div .gallery{
+    display: inline-block;
     width: 70%;
     grid-column: span 1;
+    overflow: hidden;
 }
 
 @keyframes gallery_ani{
-    from {width: 70%;}
-    to {width: 85%;}
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
 }
 
 #main_content div .gallery:hover{
     animation-name: gallery_ani;
     animation-duration: 1s;
-    width: 85%;
+    transform: scale(1.2);
 }
 
 #main_content div h2{
