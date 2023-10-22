@@ -19,6 +19,7 @@ h3{
 
 p {
     line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .skip{
@@ -62,7 +63,6 @@ img, video{
 
 nav{
     display: block;
-    text-align: center;
     padding: 10px 10px 10px 10px;
 }
 
@@ -71,25 +71,39 @@ nav:hover{
     animation-duration: 2s;
 }
 
-nav li {
-    display: inline-block;
-    text-decoration: none;
-    width: 23%;
-    margin-right: 10px;
-    text-align: center;
-    font-style: 'Times New Roman';
-    font-size: 30px;
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+nav li{
+    display: block;
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
     background-color: #0073E6;
+    text-align: center;
 }
 
 
 nav li a{
     text-decoration: none;
+    text-align: center;
+    font-style: 'Times New Roman';
+    font-size: 200%;
     color: rgb(255, 255, 255);
 }
 
 nav li a:visited {
     color: black;
+}
+
+.active{
+    background-color: #ea7100;
+    grid-column: span 2;
 }
 
 @keyframes nav_ani{
@@ -100,11 +114,6 @@ nav li a:visited {
 nav li:hover{
     animation-name: nav_ani;
     animation-duration: 1s;
-}
-
-.active{
-    background-color: #ea7100;
-    width: 47%
 }
 
 #main_content div{
