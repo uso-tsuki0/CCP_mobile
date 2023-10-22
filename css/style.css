@@ -93,7 +93,7 @@ nav li{
 nav li a{
     text-decoration: none;
     text-align: center;
-    font-style: 'Times New Roman';
+    font-style: 'times new roman';
     font-size: 200%;
     color: rgb(255, 255, 255);
 }
@@ -119,7 +119,7 @@ nav li:hover{
 
 #main_content div{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
     justify-items: center;
@@ -172,7 +172,7 @@ nav li:hover{
 }
 
 #main_content p:hover::first-letter{
-    font-style: bold;
+    font-weight: bold;
     font-size: 200%;
 }
 
