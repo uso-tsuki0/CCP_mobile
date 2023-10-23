@@ -93,7 +93,7 @@ nav li{
 nav li a{
     text-decoration: none;
     text-align: center;
-    font-style: 'times new roman';
+    font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
     color: rgb(255, 255, 255);
 }
